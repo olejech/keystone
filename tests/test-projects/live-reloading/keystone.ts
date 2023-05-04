@@ -1,5 +1,5 @@
 import { config } from '@keystone-6/core';
-import { fixPrismaPath } from './../../sandbox/utils';
+import { fixNextConfig, fixPrismaPath } from './../../sandbox/utils';
 import { lists, extendGraphqlSchema } from './schemas';
 
 export default config({
@@ -21,6 +21,7 @@ export default config({
           outputPath: 'pages/api/blah/[...rest].js',
         },
       ],
+      ...fixNextConfig.getAdditionalFiles,
     ],
   },
 });
