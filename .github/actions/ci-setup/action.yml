@@ -17,3 +17,7 @@ runs:
       shell: bash
       env:
         PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
+
+    # Run Keystone Build for tests
+    - run: pnpm build
+      shell: bash
