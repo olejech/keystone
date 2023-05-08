@@ -314,7 +314,7 @@ async function getResolvedData(
         } catch (error: any) {
           fieldsErrors.push({
             error,
-            tag: `${list.listKey}.${fieldKey}.hooks.resolveInput.${operation}`,
+            tag: `${list.listKey}.${fieldKey}.hooks.resolveInput`,
           });
           return [fieldKey, undefined];
         }
