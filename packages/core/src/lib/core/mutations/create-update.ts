@@ -333,7 +333,7 @@ async function getResolvedData(
     }
   } catch (error: any) {
     throw extensionError('resolveInput', [
-      { error, tag: `${list.listKey}.hooks.resolveInput.${operation}` },
+      { error, tag: `${list.listKey}.hooks.resolveInput` },
     ]);
   }
 
